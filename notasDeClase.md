@@ -87,6 +87,63 @@ Toda pieza de información nunca debería ser duplicada debido a que incrementa 
 La herencia nos permite crear nuevas clases a partir de otras, se basa en modelos y conceptos de la vida real. También tenemos una jerarquía de padre e hijo.<br>
 **Cuando detecto características y comportamientos iguales, entonces significa que debo realizar una abstracción.**
 
+# Clase 21: Objetos, método constructor y su sintaxis en código
+
+Los objetos nos ayudan a crear instancia de una clase, el objeto es el resultado de lo que modelamos, de los parámetros declarados y usaremos los objetos para que nuestras clases cobren vida.
+
+Los métodos constructores dan un estado inicial al objeto y podemos añadirle algunos datos al objeto mediante estos métodos. Los atributos o elementos que pasemos a través del constructor serán los datos mínimos que necesita el objeto para que pueda vivir.
+
+
+### Declaración de método constructor
+Tenemos el mismo objeto tipo Person, la forma en la que se declaran los métodos contructores es así:
+* Java:
+    ```java
+    public Person(String name){
+        this.name = name;
+    }
+    ```
+* Python:
+    ```python
+    def __init__(self, name):
+        self.name = name
+    ```
+* JavaScript:
+    ```javascript
+    function Person(name) {
+        this.name = name
+    }
+    ```
+* PHP:
+    ```php
+    public function_construct($name){
+        $this->name = name;
+    }
+    ```
+
+### Declaración de objetos
+Tenemos un objeto tipo Person, la forma en la que se declaran los objetos en cada lenguaje es así:
+* Java:
+    ```java
+    Person persona = new Person("Ann");
+    ```
+* Python:
+    ```python
+    persona = Person("Ann")
+    ```
+* JavaScript:
+    ```javascript
+    var persona = new Person("Ann");
+    ```
+* PHP:
+    ```php
+    $persona = new Person("Ann");
+    ```
+
+Como vemos todas las formas de instanciar la clase utilizan el nombre de la clase Person y luego usan parentesis y asígnan un valor, es porque este es el método constructor de la clase, es decir este como ya dije anteriormente le da los datos mínimos que necesita el objeto para existir, en este caso un nombre.
+
+
+
+
 
 
 

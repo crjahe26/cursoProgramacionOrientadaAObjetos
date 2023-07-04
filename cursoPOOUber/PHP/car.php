@@ -18,3 +18,5 @@ class Car {
         document: {$this->driver->document}";
   }
 }
+
+?>

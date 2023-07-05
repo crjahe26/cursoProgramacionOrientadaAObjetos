@@ -3,7 +3,7 @@ public class Account {
     String name;
     String document;
     String email;
-    String Password;
+    String password;
 
     public Account(String name, String document){
         this.name = name;

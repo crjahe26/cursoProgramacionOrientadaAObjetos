@@ -3,7 +3,7 @@ class Account:
     name     = str
     document = str
     email    = str
-    Password = str
+    password = str
 
     def __init__(self, name, document):
         self.name       = name

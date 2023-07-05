@@ -1,5 +1,6 @@
 from car import Car
 from account import Account
+from driver import Driver
 from uberX import UberX
 
 if __name__ == "__main__":
@@ -19,3 +20,8 @@ if __name__ == "__main__":
     uberX.passanger = 4
     print(vars(uberX))
     print(vars(uberX.driver))
+
+    cond = Driver("1548", "Pedro", "8555", "pedro11@gmail.com", "pedro2212")
+    print(vars(cond))
+    print(cond.name)
+    print(cond.document)

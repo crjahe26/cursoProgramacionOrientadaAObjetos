@@ -113,12 +113,26 @@ Tenemos el mismo objeto tipo Person, la forma en la que se declaran los métodos
         this.name = name
     }
     ```
+Con ECMS6
+
+```javascript
+    class Person {
+        constructor(name){
+            this.name = name;
+        }
+    }
+```
+Ahora se hace uso de la palabra reservada "Class" y "constructor"
+
 * PHP:
     ```php
-    public function_construct($name){
-        $this->name = name;
+    public function _construct($name){
+        $this->name = $name;
     }
     ```
+<br><br>
+
+Es importante tener en cuenta que el uso del "this" o "self" hace referencia a lo que hay dentro de la clase como tal, es decir al yo decirle "self.name = name" le estoy indicando que al valor name de la propia clase le asigne el valor name que se pasó como parametro.
 
 ### Declaración de objetos
 Tenemos un objeto tipo Person, la forma en la que se declaran los objetos en cada lenguaje es así:
@@ -141,7 +155,26 @@ Tenemos un objeto tipo Person, la forma en la que se declaran los objetos en cad
 
 Como vemos todas las formas de instanciar la clase utilizan el nombre de la clase Person y luego usan parentesis y asígnan un valor, es porque este es el método constructor de la clase, es decir este como ya dije anteriormente le da los datos mínimos que necesita el objeto para existir, en este caso un nombre.
 
+### Herencia
 
+A continuación indicaremos que la clase estudiante hereda de la clase persona, esto permite evitar repetir código, ya que por ejemplo los métodos de la clase persona se pasarán automáticamente a la clase estudiante.
+
+* Java:
+    ```java
+    class Student extends Person
+    ```
+* Python:
+    ```python
+    class Student(Person)
+    ```
+* JavaScript:
+    ```javascript
+    student.prototype = new Person();
+    ```
+* PHP:
+    ```php
+    class Student extends Person
+    ```
 
 
 

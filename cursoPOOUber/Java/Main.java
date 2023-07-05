@@ -4,8 +4,12 @@ class Main {
         
         UberX uberX = new UberX("AMQ123", new Account("Andres Herrera", "AND123"), "Chevrolet", "Sandero");
         /* uberX.passegenger = 4; */
-        uberX.setPassegenger(2);
+        uberX.setPassegenger(4);
         uberX.printDataCar();
+
+        UberVan uberVan = new UberVan("DFG458", new Account("Pedro Perez", "PPE885"));
+        uberVan.setPassegenger(6);
+        uberVan.printDataCar();
 
 /* 
         Car car2 = new Car("QWE567", new Account("Andrea Herrera", "ANDA124"));

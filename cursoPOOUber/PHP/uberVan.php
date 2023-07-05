@@ -10,6 +10,19 @@ class UberVan extends Car {
         $this->typeCarAccepted = $typeCarAccepted;
         $this->seatsMaterial = $seatsMaterial;
     }
+
+
+    public function setPassegenger($Passegenger) {
+    
+        if ($Passegenger == 6) {
+            $this->Passegenger = $Passegenger;
+        }
+        else {
+            echo "Necesitas asignar 6 pasajeros 
+    ";
+        }
+    
+    }
 }
 
 

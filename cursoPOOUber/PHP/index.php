@@ -5,6 +5,7 @@ require_once('uberX.php');
 require_once('uberPool.php');
 require_once('account.php');
 require_once('driver.php');
+require_once('uberVan.php');
 
 
 $car = new Car("AW456", new Account("Andres Herrera", "AMS123"));
@@ -24,4 +25,12 @@ $cond = new Driver( "Pedro", "1548", "8555", "pedro11@gmail.com", "pedro2212");
 echo "\n password: {$cond->password},
         conductor: {$cond->name},
         document: {$cond->document}";
+
+
+echo "Inicio de prueba de Polimorfismo";
+
+$uberVan = new UberVan("OJL395", new Account("Raúl Ramírez", "AND456"), "Nissan", "Versa");
+$uberVan->setPassegenger(6);
+$uberVan->printDataCar();
+
 ?>

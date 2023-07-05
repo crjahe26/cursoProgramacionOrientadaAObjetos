@@ -176,11 +176,35 @@ A continuación indicaremos que la clase estudiante hereda de la clase persona, 
     class Student extends Person
     ```
 
+### Encapsulamiento
+El **encapsulamiento** es hacer que un dato sea inviolable, inalterable cuando se le asigne un **modificador de acceso** (no se trata solo de ocultar el dato sino también de protegerlo). Un modificador de acceso define el **alcance y visibilidad** de un miembro de clase. (La encapsulacion es también llamada ocultamiento de información). <br>
+
+Algunos beneficios de encapsulación son:
+
+- Controlar la manera en que los datos son accedidos o modificados.
+- El código es mas flexible y fácil de cambiar a partir de nuevos requerimientos.
+- Poder modificar una parte del código sin afectar otras partes del mismo.
+- Ayuda a mantener la integridad de los datos.
+
+Las palabras clave o modificador de acceso en el encapsulamiento que nos permite realizar la protección de la que hablamos anteriormente son las siguientes:
+
+* Public: Es el mas permisivos de todos, permite acceder a todo, es decir, da acceso a todas las Clases.
+* Protected: Se puede acceder desded la misma Clase, paquetes, subclases.
+* Default: Permite el acceso a nivel de clses de internas y paquetes (No podremos ver las herencias si ha detener (Osea subclases)).
+* Private: Solo se puede acceder o ser modificado en la misma Clase.
+
+#### Getters y Setters
+Los Getters y Setters nos permiten leer y escribir (respectivamente) los valores de nuestras variables privadas desde fuera de la clase donde fueron creadas. Con los Getters obtenemos los datos de las variables y con los Setters asignamos o cambiamos su valor.
+
+### Polimorfismo
+
+Muchas formas. Poli = muchas, morfismo = formas. **NO** es Poliformismo
+<br>
+Es construir métodos con el mismo nombre pero con comportamiento diferente.
 
 
 
-
-
+# Resumen
 
 ## 4 Elementos:
 - Clases: Una clase es una plantilla o modelo que define las propiedades y comportamientos de un objeto.
